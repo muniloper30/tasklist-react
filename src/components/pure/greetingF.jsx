@@ -14,7 +14,7 @@ const GreetingF = (props) => {
 
   return (
     <div>
-      <h1>Hola {props.name} desde componente funcional </h1>
+      <h1>Te saludo {props.name} desde mi primer componente funcional </h1>
       <h2>Tu edad es de : {age} </h2>
       <div>
         <button onClick={birthay}>Cumplir años</button>
