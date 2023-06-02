@@ -15,7 +15,7 @@ class lifeCycleExample extends Component {
     }
 
     componentDidMount() {
-        console.log('DIDMOUNT: Justo al acabar el montaje del componente antes de pintarlo')
+        console.log('DIDMOUNT: Justo al acabar el montaje del componente antes de renderizarlo')
     }
 
     componentWillReceiveProps(nextProps) {
