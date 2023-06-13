@@ -25,12 +25,15 @@ export class DidUpdate extends Component {
 
 export const DidUpdateHook = () => {
 
-    useEffect
+    useEffect(() => {
+        console.log('Comportamiento cuando el componente recibe nuevos props o cambio en su estado privado')
+    });
+
 
     return (
-        <div>
-            
-        </div>
+      <div>
+        <h1>DidUpdate</h1>
+      </div>
     );
 }
 
