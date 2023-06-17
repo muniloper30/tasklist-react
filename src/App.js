@@ -4,7 +4,7 @@ import "./App.css";
 import Greeting from "./components/pure/greeting";
 // eslint-disable-next-line no-unused-vars
 import GreetingF from "./components/pure/greetingF";
-// eslint-disable-next-line no-unused-vars
+
 import TaskListComponent from "./components/container/task_list";
 // eslint-disable-next-line no-unused-vars
 import ComponenteA from "./components/container/componenteA";
@@ -18,13 +18,14 @@ import MiComponenteConContexto from "./hooks/Ejemplo3";
 import Ejemplo4 from "./hooks/Ejemplo4";
 // eslint-disable-next-line no-unused-vars
 import GreetingStyled from "./components/pure/greetingStyled";
+// eslint-disable-next-line no-unused-vars
 import Clock from "./hooks/lifecycle/Clock";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      {/* <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" /> */}
         {/* Componente propio con clase GREETING (SALUDO) */}
         {/* <Greeting  name= "Víctor"/> */}
         {/* Componente propio saludo con función */}
@@ -47,8 +48,9 @@ function App() {
         </Ejemplo4> */}
         {/* <GreetingStyled name = 'Muni'></GreetingStyled> */}
         {/* Ejercicio cambio de componente clase LYFECICLE a componente función */}
-        <Clock></Clock>
-      </header>
+        {/* <Clock></Clock> */}
+      {/*</header>*/}
+      <TaskListComponent></TaskListComponent>
     </div>
   );
 }
