@@ -14,7 +14,11 @@ import Ejemplo1 from "./hooks/Ejemplo1";
 import Ejemplo2 from "./hooks/Ejemplo2";
 // eslint-disable-next-line no-unused-vars
 import MiComponenteConContexto from "./hooks/Ejemplo3";
+// eslint-disable-next-line no-unused-vars
 import Ejemplo4 from "./hooks/Ejemplo4";
+// eslint-disable-next-line no-unused-vars
+import GreetingStyled from "./components/pure/greetingStyled";
+import Clock from "./hooks/lifecycle/Clock";
 
 function App() {
   return (
@@ -35,13 +39,15 @@ function App() {
         {/* <Ejemplo2></Ejemplo2> */}
         {/* EJEMPLO 3 ABAJO CON useContext */}
         {/* <MiComponenteConContexto></MiComponenteConContexto> */}
-        <Ejemplo4 nombre = "Muni">
         {/* TODO LO QUE HAY AQUI DENTRO ES TRATADO COMO props.children */}
+        {/* <Ejemplo4 nombre = "Muni">
           <h3>
             Contenido del props.children
           </h3>
-        </Ejemplo4>
-          
+        </Ejemplo4> */}
+        {/* <GreetingStyled name = 'Muni'></GreetingStyled> */}
+        {/* Ejercicio cambio de componente clase LYFECICLE a componente función */}
+        <Clock></Clock>
       </header>
     </div>
   );
