@@ -4,7 +4,7 @@ import "./App.css";
 import Greeting from "./components/pure/greeting";
 // eslint-disable-next-line no-unused-vars
 import GreetingF from "./components/pure/greetingF";
-// eslint-disable-next-line no-unused-vars
+
 import TaskListComponent from "./components/container/task_list";
 // eslint-disable-next-line no-unused-vars
 import ComponenteA from "./components/container/componenteA";
@@ -20,6 +20,7 @@ import Ejemplo4 from "./hooks/Ejemplo4";
 import GreetingStyled from "./components/pure/greetingStyled";
 // eslint-disable-next-line no-unused-vars
 import Clock from "./hooks/lifecycle/Clock";
+// eslint-disable-next-line no-unused-vars
 import Father from "./components/container/father";
 
 function App() {
@@ -52,8 +53,8 @@ function App() {
         {/* <Clock></Clock> */}
       {/*</header>*/}
       {/* Gestión de eventos */}
-      <Father></Father>
-      {/* <TaskListComponent></TaskListComponent> */}
+      {/* <Father></Father> */}
+      <TaskListComponent></TaskListComponent>
     </div>
   );
 }
