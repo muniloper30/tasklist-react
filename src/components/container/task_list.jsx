@@ -3,16 +3,19 @@ import { Task } from "../../models/task.class";
 import { LEVELS } from "../../models/levels.enum";
 import TaskComponent from "../pure/task";
 import "../../styles/task.scss";
+import TaskForm from "../pure/forms/taskForm";
 
 const TaskListComponent = () => {
-  const defaultTask = new Task(
-    "Example",
-    "Default description",
-    false,
-    LEVELS.NORMAL
-  );
+
+
+  const defaultTask1 = new Task("Example1","Description 1",true,LEVELS.NORMAL);
+  const defaultTask2 = new Task("Example2","Description 2",false,LEVELS.URGENT);
+  const defaultTask3 = new Task("Example3","Description 3",false,LEVELS.BLOCKING);
+
+
+  
   //ESTADO DEL COMPONENTE
-  const [tasks, setTasks] = useState([defaultTask]);
+  const [tasks, setTasks] = useState([defaultTask1, defaultTask2, defaultTask3]);
   const [loading, setLoading] = useState(true);
 
   // CONTROL DEL CICLO DE VIDA DEL COMPONENTE
@@ -53,11 +56,23 @@ const TaskListComponent = () => {
                 </tr>
               </thead>
               <tbody>
+                  { tasks.map((task, index) => {
+                    return (
+                      <TaskComponent 
+                          key={index} 
+                          task={task}>  
+                      </TaskComponent>
+                    )
+                  } ) }
+
+
+
                     {/* TODO: Iterar sobre una lista de tareas */}
-                    <TaskComponent task={defaultTask} />
+                   
               </tbody>
             </table>
           </div>
+          <TaskForm></TaskForm>
         </div>
       </div>
       {/* TODO: Aplicar un for/Map para renderizar una lista de tareas */}
